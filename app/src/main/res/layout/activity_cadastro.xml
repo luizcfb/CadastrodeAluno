@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context=".Cadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#DCDCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_uninassau" />
+
+    <TextView
+        android:id="@+id/cadastro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Cadastro"
+        android:textColor="#003874"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Name Completo"
+        android:inputType="textPersonName"
+        android:textColor="#003874"
+        android:textColorHighlight="#003874"
+        android:textColorHint="#003874"
+        android:textColorLink="#003874"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro2" />
+
+    <EditText
+        android:id="@+id/endereço"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName"
+        android:textColor="#003874"
+        android:textColorHighlight="#003874"
+        android:textColorHint="#003874"
+        android:textColorLink="#003874"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="number"
+        android:textColor="#003874"
+        android:textColorHighlight="#003874"
+        android:textColorHint="#003874"
+        android:textColorLink="#003874"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endereço" />
+
+    <EditText
+        android:id="@+id/complemento"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Complemento"
+        android:inputType="textPersonName"
+        android:textColor="#003874"
+        android:textColorHighlight="#003874"
+        android:textColorHint="#003874"
+        android:textColorLink="#003874"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero" />
+
+    <Button
+        android:id="@+id/cadastar2"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Cadastrar"
+        android:textColor="#003874"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E3B103"
+        app:layout_constraintBottom_toTopOf="@+id/voltar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complemento"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/voltar2"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Voltar"
+        android:textColor="#003874"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E3B103"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="                          "
+        android:textColor="#003874"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cadastro2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
